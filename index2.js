@@ -17,14 +17,14 @@ let video1Array = [
     
 ];
 let video2Array = [
-    "https://www.youtube.com/embed/CGhK2NPKtQE",
+    "https://www.youtube.com/embed/AeaD3Q-bFjU",
     "https://www.youtube.com/embed/MucyhPWlx28",
     "https://www.youtube.com/embed/JtfyJemtkt0",
     "https://www.youtube.com/embed/QuMJjYgHsiM",
     "https://www.youtube.com/embed/TesYVK3lHkg",
 ];
 let video3Array = [
-    "https://www.youtube.com/embed/WAjCQkf4UEI",
+    "https://www.youtube.com/embed/yJ6tOQpaO2A",
     "https://www.youtube.com/embed/IfoCfYVfrAs",
     "https://www.youtube.com/embed/IfoCfYVfrAs",
     "https://www.youtube.com/embed/FbsW2Wh-1JM",
