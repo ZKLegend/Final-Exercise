@@ -68,11 +68,8 @@ for (i = 0; i < catContainer.length; i++) {
 }
 
 
-
-
-
 // Function Return Home Button in footer
 function topFunction() {
     document.documentElement.scrollTop = 0;
   }
-  
+

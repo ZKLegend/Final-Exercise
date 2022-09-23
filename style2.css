@@ -51,6 +51,10 @@ a {
     font-weight: 600;
 }
 
+a:visited {
+    background-color: red;
+}
+
 a:first-child {
     background-color: red;
 }
