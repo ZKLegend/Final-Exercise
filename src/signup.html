@@ -11,7 +11,6 @@
       box-sizing: border-box;
     }
 
-    /* Full-width input fields */
     input[type="text"],
     input[type="password"] {
       width: 100%;
@@ -33,7 +32,6 @@
       margin-bottom: 25px;
     }
 
-    /* Set a style for all buttons */
     button {
       background-color: #2233ed;
       color: white;
@@ -49,32 +47,27 @@
       opacity: 1;
     }
 
-    /* Extra styles for the cancel button */
     .cancelbtn {
       padding: 14px 20px;
       background-color: #000000;
     }
 
-    /* Float cancel and signup buttons and add an equal width */
     .cancelbtn,
     .signupbtn {
       float: left;
       width: 50%;
     }
 
-    /* Add padding to container elements */
     .container {
       padding: 16px;
     }
 
-    /* Clear floats */
     .clearfix::after {
       content: "";
       clear: both;
       display: table;
     }
 
-    /* Change styles for cancel button and signup button on extra small screens */
     @media screen and (max-width: 300px) {
       .cancelbtn,
       .signupbtn {
@@ -85,12 +78,27 @@
   <body>
     <form action="/action_page.php" style="border: 1px solid #ccc">
       <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input
+          type="text"
+          class="userId"
+          placeholder="Enter Username"
+          name="uname"
+          required
+        />
         <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" required />
+        <input
+          type="text"
+          class="emailId"
+          placeholder="Enter Email"
+          name="email"
+          required
+        />
 
         <label for="psw"><b>Password</b></label>
         <input
           type="password"
+          class="psw"
           placeholder="Enter Password"
           name="psw"
           required
@@ -99,20 +107,11 @@
         <label for="psw-repeat"><b>Repeat Password</b></label>
         <input
           type="password"
+          class="psw-repeat"
           placeholder="Repeat Password"
           name="psw-repeat"
           required
         />
-
-        <label>
-          <input
-            type="checkbox"
-            checked="checked"
-            name="remember"
-            style="margin-bottom: 15px"
-          />
-          Remember me
-        </label>
 
         <p>
           By creating an account you agree to our
@@ -121,9 +120,10 @@
 
         <div class="clearfix">
           <button type="button" class="cancelbtn">Cancel</button>
-          <button type="submit" class="signupbtn">Sign Up</button>
+          <button type="button" class="signupbtn">Sign Up</button>
         </div>
       </div>
     </form>
+    <script src="signup.js"></script>
   </body>
 </html>
