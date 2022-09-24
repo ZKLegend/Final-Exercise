@@ -36,20 +36,23 @@ let videoObject = {
     2: video2Array,
     3: video3Array
 }
-console.log(videoObject[3][0]);
+console.log(videoObject[3]);
 let properties = Object.getOwnPropertyNames(videoObject);
-console.log(properties);
+
 
 // Write changeVideo Function
 function changeVideo(n) {
+    let searchParams = new URLSearchParams(window.location.search);
+    let name = searchParams.get('name');
+    let id = searchParams.get('id');
     let iframe = document.querySelector('iframe');
     let videoName = document.querySelector('h1');
     a[n].addEventListener('click', () => {
         event.preventDefault();
-        for (m = 0; m <video1Array.length; m++) {
+        for (m = 0; m <videoObject[id].length; m++) {
             if (m == n) {
-    iframe.src = video1Array[m];
-    videoName.innerHTML = `Naruto - Episode ${m+1}`;
+    iframe.src = videoObject[id][m];
+    videoName.innerHTML = `${name} - Episode ${m+1}`;
     a[n].style.backgroundColor = "red";
             }
         }
