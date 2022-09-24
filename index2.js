@@ -67,10 +67,14 @@ function watchVideo() {
     for (i = 0; i <= properties.length; i++) {
     let searchParams = new URLSearchParams(window.location.search);
     let id = searchParams.get('id');
+    let name = searchParams.get('name');
+    console.log(name);
     console.log(id);
     let iframe = document.querySelector('iframe');
+    let videoName = document.querySelector('h1');
         if (id == i) {
             iframe.src = videoObject[i][0];
+            videoName.innerHTML = `${name} - Episode 1`;
         }
         console.log(iframe.src);
     }
